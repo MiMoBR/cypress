@@ -1,13 +1,20 @@
 /// <reference types="cypress" />
 
+Cypress._.times(30, (k) => {
+  describe(`example to-do app ${k+1}/15`, () => {
+    beforeEach(() => {
+      cy.visit('/')
+      cy.clearLocalStorage()
+    })
 
-describe('example to-do app', () => {
-  beforeEach(() => {
-    cy.visit('https://www.creditas.com/emprestimo-online?utm_source=cypress&utm_medium=rnco')
-  })
-
-  it('displays two todo items by default', () => {
-    //cy.get('[data-testid="product-card-button"]').click()
-    cy.get('[data-testid="product-card-button"]').click()
+    it.only('AE - LF step 1', () => {
+      cy.wait(2000)
+      cy.get('[data-testid="intendedCredit"]').type('5000')
+      cy.get('[data-testid="email"]').type('reinaldo.nan+124578@google.com')
+      cy.get('[data-testid="fullName"]').type('Reinaldo Nani Test Cypress')
+      cy.get('[data-testid="submit"]').click()
+      cy.wait(4000)
+    })
   })
 })
+
