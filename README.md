@@ -5,3 +5,7 @@
 3 - npm install cypress -D
 4 - npx cypress open
 5 - E2E Testing
+
+
+yarn add cypress --dev
+npx cypress open
