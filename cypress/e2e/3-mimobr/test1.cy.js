@@ -2,7 +2,7 @@
 
 describe('Entitlement', () => {
   beforeEach(() => {
-    cy.visit('https://mimobr.com/')
+    cy.visit('http://www.google.com')
   })
 
   Cypress._.times(10, (k) => {

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 Cypress._.times(25, (k) => {
-  describe(`example to-do app ${k+1}/25`, () => {
+  describe(`example to-do app ${k+1}/1`, () => {
     beforeEach(() => {
       cy.visit('/')
       cy.clearLocalStorage()
@@ -17,4 +17,3 @@ Cypress._.times(25, (k) => {
     })
   })
 })
-

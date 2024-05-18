@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'http://www.google.com',
+    baseUrl: 'http://34.49.223.62/?utm_source=display_dfa&utm_medium=cpm&utm_campaign=teste-nani-16',
     //setupNodeEvents(on, config) {
       //var url = 'https://http://34.49.0.148/?'
       //var utmExperiment = 'experiment=CRAT-033b&loggedIn=true'
